@@ -8,79 +8,85 @@
     <style>
         *{
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
-        body{
-          margin: 30px ;
-          overflow-y: hidden;
+
+        body{          
+          padding: 25px ;
         }
         
         header{
-            background-color: rgb(0, 219, 219);
-            text-align: center;
-            margin: 0% 0% 1% 0%;
-            padding:1rem;
-            height: 10vh;
-            color: aliceblue;
+          height: 120px;
+          padding-top:10px;
+          text-align: center;
+          background-color: rgb(0, 219, 219);
+          color: aliceblue;
         }
-        #middle{
-            height: 68vh;
+
+        .middle{
+
+            height: 525px;
             width: 100%;
+            padding: 10px 0px;
         }
-        #sidebar{
+
+        .sidebar{
             background-color: rgb(144, 161, 81);
             float: left;
             padding:1rem;
-            height: inherit;
-            width: 26.2%;
+            height: 100%;
+            width: 30%;
             text-align: center;
             color: aliceblue;
         }
+
         .right_section{
             float: right;
-            height: inherit;
-            width: 73%;
+            height: 100%;
+            width: 70%;
+            padding-left: 10px;
             color: rgb(255, 255, 255);
         }
-        #main_content{
+
+        .main_content{
             background-color: goldenrod;
             text-align: center;
             padding: 1rem;
-            height: 78%;
+            height: 80%;
             width: auto;
-            margin-bottom: 1%;
-
         }
-            #extra_content{
+        .extra_content{
+          padding-top:10px ;
+          height: 20%;
+        }
+        .extra_content>div{
             background-color: rgb(85, 84, 84);
             text-align: center;
             padding: 1rem;
-            height: 20%;
+            height: 100%;
             width:auto;
-            
         }
         
         footer{
             clear: both;
             background-color: rgb(208, 137, 5);
-            height: 10vh;
-            margin: 1% 0% 0% 0%;
+            height: 120px;
             padding: 1rem;
             text-align: center;
-            color: aliceblue;
-
-            
+            color: aliceblue;            
         }
 
     </style>
   </head>
 
   <body>
-    <header id="header">Header</header>
-    <div id="middle">
-      <section id="sidebar">Sidebar</section>
+    <header class="header">Header</header>
+    <div class="middle">
+      <section class="sidebar">Sidebar</section>
       <div class="right_section">
-        <section id="main_content">Main Content</section>
-        <section id="extra_content">Extra Content</section>
+        <section class="main_content">Main Content</section>
+        <section class="extra_content"><div>Extra Content</div></section>
       </div>
     </div>
     <footer>Footer</footer>
