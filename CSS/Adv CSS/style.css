@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 1.5rem;
+}
+header{
+    background-color: #d9d9d9;
+    width: 100%;
+    height: 9vh;
+    padding: 1vh 8vw;
+}
+img{
+    height: 8vh;
+}
+nav{
+    margin-top: 20px;
+    float: right;
+    width: fit-content;
+    height: 7vh;
+    font-size: large;
+}
+
+.nav_btn{
+    color: #3a709d;
+    float: left;
+    margin-right: 10px;
+}
+.nav_btn:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
+#banner_container{
+    float: left;
+    background-color: #05a2cb;
+    width: 100%;
+    height: 28vh;
+    text-align: center;
+    font-size:8vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    color: aliceblue;    
+
+}
+#banner{
+    width: fit-content;
+    height: 28vh;
+    margin: auto;
+}
+
+.banner_left_btn{
+    float:left;
+    width: fit-content;
+    line-height: 28vh;
+    color: black;
+}
+
+.banner_right_btn{
+    float:right;
+    width: fit-content;
+    line-height: 28vh;
+    color: black;    
+}
+
+.banner_txt{
+    float: left;
+    width: fit-content;
+    line-height: 28vh;
+    padding: 0% 0%;
+}
+
+#content{
+    clear: both;
+    width: 100%;
+    height: 48vh ;
+}
+#left_content{
+    float: left;
+    width: 44.5%;
+    height: 93%;
+    margin: 1% 0.5% 1% 4%;
+}
+
+#left_content_up{
+    float: left;
+    background-color: #d39ed6;
+    margin-top: 5%;
+    height: 80%;
+    width: 40%;
+}
+
+
+#left_content_down{
+    background-color: #ffe469;
+    height: 100%;
+    margin-left: 10%;
+}
+
+#right_content{
+    float:right;
+    width: 45.2%;
+    height: 93%;
+    margin: 1% 4% 1% 0.5%;
+    margin-right: 5.2%;
+}
+
+#right_content_up{
+    width: 100%;
+    padding: 5%;
+    height: 61%;
+    background-color: #ed8719;
+    margin-bottom: 2%;
+}
+
+.frm{
+    margin: 1%;
+    float: left;
+    clear: both;
+    height: 20%;
+    border: none;
+    width: 70%;
+    background-color: rgba(234, 199, 175, 0.507);
+}
+
+.frmbtn{
+    margin: 5px;
+    float: left;
+    clear: both;
+    border: none;
+    line-height: 200%;
+    width: 20%;
+    background-color: rgba(234, 199, 175, 0.507);
+}
+
+#right_content_down{
+    height: 35%;
+    background-color: #8ae33b;
+}
+footer{
+    background-color:#007694;
+    width: 100%;
+    height: 9vh;
+    line-height: 10vh;
+    
+}
+#footer_btns{
+    width: max-content;
+    margin: auto auto;
+}
+.footer_btn{
+    color: aliceblue;
+    float: left;
+    padding: 5px;
+    
+}
