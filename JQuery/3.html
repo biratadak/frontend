@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jQuery.js"></script>
+    <script>
+        $(Document).ready(function() {
+           
+           $("#form1").submit(function(){
+            var s=$("#fname").val();
+            var l=$("#lname").val();
+            if(s=="" | l=="")
+            alert("Please fill all the fields");
+            else
+            alert("Submitted");
+       });
+
+       });
+
+    </Script>
+</head>
+<body>
+    <form action="#" id="form1">
+        <label for="">First name:</label><br>
+        <input type="text" id="fname" value="Mickey"><br>
+        <label for="">Last name:</label><br>
+        <input type="text" id="lname" value="Mouse"><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+</body>
+</html>
