@@ -44,6 +44,9 @@ line-height: 70px;
     justify-content: center;
     align-items: center;
     font-size: 200%;
+    padding: auto 10%;
+    padding-top: 300px;
+    
 
 }
 .h1{
@@ -54,14 +57,14 @@ line-height: 70px;
     /* font-style: normal; */
     font-family: 'Roboto', sans-serif;
 
-    width: 80%;
+    width: 60%;
     text-align: center;
+    /* padding-bottom: 20px; */
 }
 .one>p{
     padding: 2%;
-    font-size: 80%;
+    font-size: 15px;
     width: 40%;
-    color: #b0abb6;
     text-align: center;
 }
 .darrow{
@@ -148,7 +151,6 @@ img{
     text-align: center;
     width: 30%;
     color:#fbfaff;
-    margin-bottom: 10%;
 }
 
 .icon{
@@ -156,8 +158,8 @@ img{
     margin: auto;
     padding: 4%;
     background-color: #ffffff2a;
-    height: 80px;
-    width: 80px;
+    height: 100px;
+    width: 100px;
 
 }
 .icon>img{
@@ -251,6 +253,7 @@ animation-duration: 1s;
 }
 .gs>h3{
     padding-bottom: 5%;
+
 }
 .gs>p{
     font-family: 'Roboto';
@@ -276,18 +279,201 @@ animation-duration: 1s;
 }
 
 .five{
+    padding: 0% 10%;
+    display: flex;
+    background-image: url(images/img-4.jpg);
+    background-size: cover;
     height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.five>.card>h3{
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    
+}
+.five>.card>h1{
+    font-size: 50px;
+}
+.five>.card:hover {
+    color: #cfa803;
 }
 .six{
+    /* display: flex; */
     height: 790px;
+    padding: 0% 10%;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+    text-align: center;
+}
+.six>.h2{
+    font-size: 60px;
+}
+.six>p{
+    padding-bottom: 80px;
+}
+.plan_section{
+    display: flex;
+
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+
+    height: 60%;
+}
+.plan_card{
+    background-color: #fbfaff;
+    /* border: 1px black solid; */
+    box-shadow:  0px 0px 10px -3px rgba(0, 0, 0, 0.582) ;
+    padding: 30px;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.plan_section>.plan_card>h2{
+font-size: 30px;
+font-family: sans-serif;
+font-weight: 400;
+padding: 15px;
+/* overflow:hidden; */
+}
+.plan_section>.plan_card>p{
+    padding: 5px;
+}
+.plan_section>.plan_card>.btn{
+    border: black 2px solid;
+    color: black;
+}
+.plan_section>.plan_card>.btn:hover{
+    border: transparent 2px solid;
+    color: white;
 }
 .seven{
+    background-image: url(images/img-3.jpg);
+    background-size: cover;
+    padding: 5% 10%;
     height: 630px;
+}
+.seven>.top{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-bottom: 10px;
+    /* background-color: rgb(9, 5, 5); */
+}
+.top>.h3{
+    font-family: 'Roboto';
+    font-size: 40px;
+}
+.arrow_btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    width: 150px;
+}
+.lft_btn,.rit_btn{
+    padding: 15px;
+    text-align: center;
+    width: 50%;
+    font-size: 30px;
+    background-color: #39366b;
+}
+.lft_btn:hover,.rit_btn:hover{
+    background-color: #cfa803;
+    color: #f5f4fa;
+} 
+.seven>.mid{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 70%;
+
+    display: flex;
+    margin-top:10px;
+    text-align: center;
+    
+}
+.id_card{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    margin: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.id_card>.image{
+height: 100px;
+width: 100px;
+margin: 25px;
+border-radius: 50%;
+object-fit: contain;
+overflow: hidden;
+/* border: 1px solid red; */
+}
+.id_card h3,h6{
+    font-family: 'Roboto';
+    margin: 5px;
+
+}
+.id_card p{
+    padding: 10px 0px;
 }
 .eight{
     height: 830px;
+    padding: 10%;
 
 }
+.eight>.h3{
+font-family: 'Roboto';
+font-size: 40px;
+/* padding-top: 20px; */
+}
+.eight>p{
+    padding: 25px;
+}
+.blog_cards{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    height: 80%;
+}
+.eight .card{
+    /* border: 1px solid black; */
+    box-shadow:  0px 0px 10px -5px rgba(0, 0, 0, 0.582) ;
+    height: 100%;
+    width: 32%;
+    color: #655f7d;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.eight img{
+    object-fit: cover;
+    /* border: 5px solid green; */
+    height: 100%;
+}
+.eight .image{
+    width: 100%;
+    height: 50%;
+    object-fit: scale-down;
+
+}
+.eight .btn{
+    margin: 10px 0px;
+    border: solid black 2px;
+}
+
+
+
 
 .btn{
     width: fit-content;
@@ -295,7 +481,6 @@ animation-duration: 1s;
     border-radius: 30px;
     padding: 10px 50px;
     background-color: transparent;
-    color:#fbfaff;
     font-weight: 900;
     font-family: monospace;
     margin: 5px;
@@ -310,11 +495,73 @@ animation-duration: 1s;
 .blue{
 width: 100%;
 /* height: 30%; */
+/* background-color: ; */
 box-shadow: inset 0 0 0 2000px #181b3ceb;
 color: #fbfaff;
+}
+.blue .btn
+{
+color: #daccbe;
+}
+.blue p{
+    color: #b0abb6;
+
 }
 
 .white{
 width: 100%;
-background-color: #fbfaff;
+background-color: #f5f4fa;
+color:#4c425c;
+}
+.white .btn{
+    color:#4e435a
+}
+
+footer{
+    height: 450px;
+    padding: 0% 10%;
+    font-family:'Roboto' ;
+    background-color: #3a376c;
+    color: #f7f3fc ;
+}
+.f_links{
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.f_link h2{
+    padding-bottom: 5% ;
+    font-weight: 900;
+}
+.f_link>ul>li{
+    padding: 5px;
+    list-style: none;
+    font-size: small;
+    color: #a8aacc;
+}
+.f_link>.input{
+    display: flex;
+}
+.f_link>.input>input{
+    background-color: #fff;
+    height: 50px;
+    width: 80%;
+    padding-left: 10px;
+    border-radius: 50px 0px 0px 50px;
+    border-style: none;
+
+}
+.f_link>.input>.image{
+    background-color: #d0a904;
+    /* float: right; */
+    height: 50px;
+    width: 20%;
+    border-radius: 0px 50px 50px 0px;
+    border-style: none;
+    text-align: center;
+    padding: 15px 0px;
+}
+.f_link>.input>.image>img{
+height: 20px;
+width: 20px;
 }
