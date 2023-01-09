@@ -6,122 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
     <style>
-       
-       *{
-        box-sizing: border-box;
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
         }
-
         body{
-        /* height: 810px; */
-        margin: 0px;
-        padding: 30px;
+            padding: 25px;
+            margin: 0;
+            height: 815px;
+            width: 1440px;
         }
-        
-        #main{
-        height: 750px;
-        background-color: #e70000;
+        .main{
+            height: 100%;
+            background-color: #e70000;
+            
         }
-
-        h1{
-        width:max-content;
-        color: #fbe0e0;
-        font-size: 48px;
+        .text{
+            display: inline-block;
+            width: 50%;
+            position: relative;
+            font-size: 48px;
         font-family: 'Raleway', sans-serif;
-        }
+        padding: 5%;
+        color: aliceblue;
 
-        h6{
-        width:max-content ;
-        color: rgba(255, 255, 255, 0.48);
+        }
+        .text p{
+        color: rgba(255, 255, 255, 0.812);
         font-size: 20px;
+        padding: 5% 0%;
+        }
+        .logo{
+            display: inline-block;
+            width: 40%;
+            position: relative;
+            left: 5%;
+            padding: 5% 0%;
+        }
+        .sections{
+            width: 100%;
+            /* background-color:rgba(0, 0, 0, 0.601); */
+            height: 45%;
+        }
+        .section{
+
+            float: inline-start;
+            background-color: rgba(15, 1, 1, 0.606);
+            width: 33%;
+            height: 99%;
+            padding: 5%;
+            color: aliceblue;
+        }
+        .section>h3{
+            padding: 10% 0%;
+        }
+        .section>p{
+            color: #c55555;
+
+        }
+        .mid{
+            margin: 0% 0.5%;
         }
         
-        p{
-        color: rgb(228, 108, 108);
-        }
-
-        header{
-        float: left;
-        height: 412px;
-        width: 1380px;
-        padding: 70px 140px;
-        }
-
-        #text{
-        float: left;
-        width: 770px;
-        }
-
-        #image{
-        float: left;
-        height: 200px;
-        width: 220px;
-        /* margin-left: 6rem; */
-        }
-
-        footer{
-        height: 340px;
-        width: 1380px;
-        }
-        
-        section{
-        float: left;
-        height: 338px;
-        width: 457px;
-        padding:70px;
-        background-color: #571212e3;
-        color: rgb(255, 255, 255);
-        }
-
-        .mid_sec{
-        margin: 0px 4.5px;
-        }
 
     </style>
 </head>
 <body>
-
-    <div id="main">
-    
+    <div class="main">
         <header>
-            <div id="text">
-
-                <h1>Down with the state</h1>
-                <h6>Abandon the left vs. right paradigm and adopt new ideals, where<br>
-                    consistency and logic reign supreme.</h6>
+            <div class="text">
+                <h3>Down with the state</h3>
+                <p>Abandon the left vs. right paradigm and adopt new ideals, where
+                    consistency and logic reign supreme.</p>
+            </div><!--
+       --><div class="logo"> 
+                <img src="wing.png" alt="">
             </div>
-           
-                <div id="image">
-                    <img src="wing.png" alt="no img">
-                </div>
-            </header>
-
-        <footer>
-
-            <section>
-                <h3> what about the roads? </h3>
+        </header>
+        <div class="sections">
+            <div class="section"> <h3> what about the roads? </h3>
                 <p>
                     You ist den'understand economics like sunny and demand Dontserraddo ashore there's a
                     demand there will be a supply: we'll all have our roads.   
-                </p>
-            </section>
-            <section class="mid_sec">
-                <h3>Is taxation theft?</h3>
+                </p></div>
+            <div class="section mid"><h3>Is taxation theft?</h3>
                 <p>
                     If I came to your house with some heavily buddies demanded that you and your neighbours armed pie me a percentage of vour income, in return for some crappy monopolized services that you
                     didn't ask for, would you consider that theft?
-                </p>
-            </section>
-            <section>
-                <h3>So, what you're saying is...?</h3>
+                </p></div>
+            <div class="section"><h3>So, what you're saying is...?</h3>
                 <p>
                     Libertarians want to live in a world where gay
                     couples can protect their poppy fields with fully automatic wepons <br><br>Àworld where voluntaryism and property rights
                     are treated with the highest respect.
-                </p>
-            </section>
-        </footer>
-     </div>
+                </p></div>
+        </div>
+    </div>
+
+
     
 </body>
 </html>
