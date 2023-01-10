@@ -25,13 +25,18 @@
             /* width: 100%; */
             
         }
+        .top{height:50%;
+        padding:70px ;
+        overflow: hidden;
+    
+    }
         .text{
             display: inline-block;
             width: 50%;
             position: relative;
             font-size: 48px;
         font-family: 'Raleway', sans-serif;
-        padding: 70px;
+        /* padding: 70px; */
         color: aliceblue;
 
         }
@@ -41,28 +46,35 @@
         padding: 5% 0%;
         }
         .logo{
+            /* float: right; */
             display: inline-block;
-            width: 40%;
+            margin: auto auto;
+            width: 50%;
             position: relative;
-            left: 5%;
-            padding: 30px 0px;
+        }
+        .logo>img{
+            display: block;
+            width: 200px;
+            margin: auto;
         }
         .sections{
             width: 100%;
-            /* background-color:rgba(0, 0, 0, 0.601); */
+            font-size: 0px;
             height: 50%;
         }
         .section{
-
-            float: left;
+            font-size: 16px;
+            display: inline-block;
             background-color: rgba(15, 1, 1, 0.606);
             width: 33%;
-            height: 99%;
-            padding: 70px;
+            height: 100%;
             color: aliceblue;
+            position: relative;
+            padding: 70px;
+            overflow: hidden;
         }
         .section>h3{
-            padding: 30px 0px;
+            padding-bottom: 30px ;
         }
         .section>p{
             color: #c55555;
@@ -77,7 +89,7 @@
 </head>
 <body>
     <div class="main">
-        <header>
+        <div class="top">
             <div class="text">
                 <h3>Down with the state</h3>
                 <p>Abandon the left vs. right paradigm and adopt new ideals, where
@@ -86,24 +98,29 @@
        --><div class="logo"> 
                 <img src="wing.png" alt="">
             </div>
-        </header>
-        <div class="sections">
-            <div class="section"> <h3> what about the roads? </h3>
-                <p>
-                    You ist den'understand economics like sunny and demand Dontserraddo ashore there's a
-                    demand there will be a supply: we'll all have our roads.   
-                </p></div>
-            <div class="section mid"><h3>Is taxation theft?</h3>
-                <p>
-                    If I came to your house with some heavily buddies demanded that you and your neighbours armed pie me a percentage of vour income, in return for some crappy monopolized services that you
-                    didn't ask for, would you consider that theft?
-                </p></div>
-            <div class="section"><h3>So, what you're saying is...?</h3>
+        </div>
+        <div class="sections"><!--
+        --><div class="section left">
+            <h3>So, what you're saying is...?</h3>
+            <p>
+                Libertarians want to live in a world where gay
+                couples can protect their poppy fields with fully automatic wepons Àworld where voluntaryism and property rights
+                are treated with the highest respect.
+            </div><!--
+            --><div class="section mid">
+                <h3>So, what you're saying is...?</h3>
                 <p>
                     Libertarians want to live in a world where gay
-                    couples can protect their poppy fields with fully automatic wepons <br><br>Àworld where voluntaryism and property rights
+                    couples can protect their poppy fields with fully automatic wepons Àworld where voluntaryism and property rights
                     are treated with the highest respect.
-                </p></div>
+            </div><!--
+            --><div class="section right">
+                <h3>So, what you're saying is...?</h3>
+                <p>
+                    Libertarians want to live in a world where gay
+                    couples can protect their poppy fields with fully automatic wepons Àworld where voluntaryism and property rights
+                    are treated with the highest respect.
+            </div>
         </div>
     </div>
 
