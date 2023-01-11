@@ -12,12 +12,31 @@
       href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Roboto:wght@100&display=swap"
       rel="stylesheet"
     />
+    
+<script type="text/javascript" src="jQuery.js">
+</script>
+<script type="text/javascript" language="javascript">
+    $(document).ready(function(){
+        
+      $(".menu").click(function(){
+            $(".links").css("display","block");
+            $(".menu").removeAttr("src")
+            $(".menu").attr("src","menu-c.webp")
+            $(".menu").click(function(){
+              $(".links").css("display","none");
+
+              $(".menu").removeAttr("src")
+            $(".menu").attr("src","menu.png")
+            });
+        });
+    });
+</script>
   </head>
   <body>
     <nav>
       <img src="images/head_logo.jpg" alt="" />
 
-      <div class="nav_links">
+      <div class="nav_links1">
         <li>HOME</li>
         <li>ABOUT</li>
         <li>SERVICES</li>
@@ -25,6 +44,17 @@
         <li>PRICE</li>
         <li>BLOG</li>
         <img class="mail" src="images/mail.jpg" alt="" />
+      </div>
+      <div class="nav_links2">
+        <img class="menu"  src="menu.png" alt="">
+        <div class="links">
+          <li>HOME</li>
+          <li>ABOUT</li>
+          <li>SERVICES</li>
+          <li>PORTFOLIO</li>
+          <li>PRICE</li>
+          <li>BLOG</li>
+        </div>
       </div>
     </nav>
 
