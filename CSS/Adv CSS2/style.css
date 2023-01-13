@@ -4,6 +4,23 @@
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+@keyframes box_shadow_anim {
+    from{
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.582);
+
+    }
+    to{
+        box-shadow: 0px 0px 25px -2px #181b3ceb /*rgba(18, 15, 220, 0.582)*/;
+
+    }
+}
+
+@keyframes hidden-cont {
+    from{
+        height: 1%;
+        width: 1%;
+      }
+}
 
 nav{
     display: flex;
@@ -168,6 +185,7 @@ img{
         font-size: 80%;
         color: #b0abb6;
 }
+
 .icon_txt>.icon{
     float: left;
     clear: left;
@@ -180,9 +198,18 @@ img{
 
 .two_right{
     object-fit:cover;
-    height: 100%;
-    width: 100%;
+    /* height: 100%; */
+    /* width: 100%; */
     overflow: hidden;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.582);
+
+
+}
+.two_right:hover{
+    animation-name: box_shadow_anim;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
 }
 
 .three{
@@ -301,12 +328,7 @@ display:block;
 
 
 }
-@keyframes hidden-cont {
-    from{
-        height: 1%;
-        width: 1%;
-      }
-}
+
 .gs:hover{
     background-color: #222341d9;
     /* height: inherit; */
@@ -399,7 +421,9 @@ display:block;
 .plan_card{
     background-color: #fbfaff;
     /* border: 1px black solid; */
-    box-shadow:  0px 0px 10px -3px rgba(0, 0, 0, 0.582) ;
+    /* box-shadow:  0px 0px 10px -3px rgba(0, 0, 0, 0.582) ; */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.582);
+
     padding: 30px;
     width: 30%;
     height: 100%;
@@ -522,7 +546,8 @@ font-size: 40px;
 }
 .eight .card{
     /* border: 1px solid black; */
-    box-shadow:  0px 0px 10px -5px rgba(0, 0, 0, 0.582) ;
+    /* box-shadow:  0px 0px 10px -5px rgba(0, 0, 0, 0.582) ; */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.582);
     height: 100%;
     width: 32%;
     color: #655f7d;
@@ -535,15 +560,7 @@ font-size: 40px;
     animation-duration: 2s;
     animation-fill-mode: forwards ;
 }
-@keyframes box_shadow_anim {
-    /* from{
-        border: transparent 0px solid;
-    } */
-    to{
-        box-shadow: 0px 0px 50px -5px rgba(0, 0, 0, 0.582);
 
-    }
-}
 .eight img{
     object-fit: cover;
     /* border: 5px solid green; */
@@ -612,25 +629,49 @@ footer{
     background-color: #3a376c;
     color: #f7f3fc ;
 }
+.f_bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
 .f_links{
     padding: 50px 0px;
     display: flex;
+    justify-content: space-around;
+    width: 75%;
+}
+.f_input{
+    width: 25%;
+    padding: 30px auto;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
+
+
 }
 .f_link h2{
     padding-bottom: 5% ;
     font-weight: 900;
+    text-align: center;
 }
 .f_link>ul>li{
     padding: 5px;
     list-style: none;
     font-size: small;
     color: #a8aacc;
+    text-align: center;
 }
-.f_link>.input{
+.f_input>.input{
     display: flex;
+    padding:5% ;
 }
-.f_link>.input>input{
+.f_input>h2{
+    padding: 5%;
+    text-align: center;
+}
+.f_input>.input>input{
     background-color: #fff;
     height: 50px;
     width: 80%;
@@ -639,7 +680,7 @@ footer{
 
 }
 
-.f_link>.input>.image{
+.f_input>.input>.image{
     background-color: #d0a904;
     /* float: right; */
     height: 50px;
@@ -647,11 +688,12 @@ footer{
     border-radius: 0px 50px 50px 0px;
     border-style: none;
     text-align: center;
-    padding: 15px 0px;
+    /* padding: 15px 0px; */
 }
 .f_link>.input>.image>img{
-height: 20px;
-width: 20px;
+    width: 60%;
+    height: inherit;
+      
 }
 
 
@@ -686,6 +728,7 @@ width: 20px;
         width: 15px;
         
     }
+    
   
     .two_right{
         display: none;
@@ -800,24 +843,50 @@ width: 20px;
       }
       .eight .card{
         width: 70%;
+        margin:  25px auto;
       }
       footer{
         height: auto;
-        padding: 0% 5%;
+        padding: 0% 0%;
       }
       footer>.logo{
         text-align: left;
       }
       .f_links{
-        flex-direction: column;
+        text-align: center;
+        flex-direction: row;
+        justify-content: space-around;
         padding: 30px 0px;
       }
-      .f_link{
+    .f_link > ul > li{
         padding: 5% 0%;
+ 
       }
+    .f_link{
+        margin: 5px;
+    }
+    .f_bottom{
+        flex-direction: column;
+       
+    }
+    .f_input{
+        width: 60%;
+        /* padding: 1%; */
+    }
+    .f_input>.input{
+        padding: 0px;
+        padding-bottom: 4%;
+    }
+    .f_input>h2{
+        padding: 0px;
+    }
       .blue .btn{
         border: 2px solid #e3e3e3;
       }
-
+      .f_link>.input>.image>img{
+        width: inherit;
+        height: 100%;
+          
+    }
 
 }
