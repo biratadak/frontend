@@ -18,17 +18,27 @@
 <script type="text/javascript" language="javascript">
     $(document).ready(function(){
         
+      $(".links").hide();
       $(".menu").click(function(){
-            $(".links").css("display","block");
-            $(".menu").removeAttr("src")
-            $(".menu").attr("src","menu-c.webp")
-            $(".menu").click(function(){
-              $(".links").css("display","none");
+        $(".links").slideToggle();
 
-              $(".menu").removeAttr("src")
-            $(".menu").attr("src","menu.png")
-            });
-        });
+      });
+      // $(".menu").click(function(){
+      //   //     $(".links").css("display","block");
+      //   //     $(".menu").removeAttr("src")
+      //   //     $(".menu").attr("src","menu-c.webp")
+      //   //     $(".menu").click(function(){
+      //   //       $(".links").css("display","none");
+
+      //   //       $(".menu").removeAttr("src")
+      //   //     $(".menu").attr("src","menu.png")
+      //   //     });
+      //   // });
+       
+      //   $(".menu").click(function(){
+          
+      //   $(".links").slideToggle();
+      //   });
     });
 </script>
   </head>
@@ -361,7 +371,7 @@
             </ul>
           </div>
           <div class="f_link">
-              <h2>Subscribe newsletter</h2>
+              <h2>Subscribe Newsletter</h2>
               <div class="input">
                 <input type="text" placeholder="email">
                 <div class="image"><img src="images/icons/i-message_w.svg" alt=""></div>
