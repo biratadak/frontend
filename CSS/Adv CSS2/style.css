@@ -697,7 +697,7 @@ footer{
 }
 
 
-@media (max-width:850px){
+@media (max-width:600px){
     *{
         text-align: center;
     }
