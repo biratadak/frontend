@@ -8,6 +8,7 @@
     --dim-white: rgba(255, 255, 255, 0.658);
 }
 *{
+    /* border: 1px solid rgb(34, 255, 0); */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -40,13 +41,17 @@
     max-width: 1450px;
     width: 100%;
     margin: 0 auto;
-    /* padding: 0 15px; */
+    padding: 0 15px;
+
+  
   }
 
 /* Header Starts */
 nav{
     /* height: 85px; */
     padding: var(--wrapper-padding);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .link{
@@ -67,19 +72,36 @@ hr {
 }
 /* Header Ends */
 
+
 .main{
+    background-image:linear-gradient(0deg, #00000058,#00000058), url(Images/banner.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
     /* height: 800px; */
-    padding: var(--wrapper-padding);
+    /* 
     background:url(Images/slash.png) no-repeat,linear-gradient(0deg, #b24646,#b24646) no-repeat,url(Images/slash.png) no-repeat,linear-gradient(0deg, #00000058,#00000058) no-repeat,url(Images/banner.jpg) no-repeat center ;
-    background-size: auto,550px auto, auto,auto,auto 100%;
-    padding-bottom: 50px;
+    background-size: auto,550px 100%, auto,auto,auto 100%;
+    background-position: auto,auto,auto,auto,auto; */
+    /* padding-bottom: 50px; */
 }
+.red{
+    background-position:top;
+    right: 50%;
+    background:linear-gradient(0deg, #b24646,#b24646) no-repeat ;
+    /* background-size: cover; */
+    background-size: 40%;
+    padding-bottom: 50px;
 
+}
 /* Mid starts */
 
 .mid{
+    padding: var(--wrapper-padding);
     padding-top: 140px;
+    padding-bottom: 100px;
+
 }
 .mid>.heading{
     color: white;
@@ -94,7 +116,10 @@ hr {
     background-color: transparent;
 border: 1px solid white;
 color: white;
-padding: 15px 20px;
+/* padding: 15px 20px; */
+margin-right: 20px;
+height: 40px;
+width: 100px;
 }
 
 .btn:hover{
@@ -122,9 +147,10 @@ padding: 15px 20px;
 
 /* bottom section starts */
 .stats{
-   
+    padding: var(--wrapper-padding);
+
     backdrop-filter: blur(5px);
-    margin: 80px 0px;
+    /* margin: 80px 0px; */
 }
 
 .stats>ul{
