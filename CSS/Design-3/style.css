@@ -91,7 +91,7 @@ hr {
     right: 50%;
     background:linear-gradient(0deg, #b24646,#b24646) no-repeat ;
     /* background-size: cover; */
-    background-size: 40%;
+    background-size: 40% 100%;
     padding-bottom: 50px;
 
 }
