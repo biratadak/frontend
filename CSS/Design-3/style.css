@@ -15,7 +15,7 @@
     padding: 0;
     font-family: "Space Grotesk", sans-serif;
     font-size: var(--fs-base);
-    overflow: hidden;
+    /* overflow: hidden; */
 
 }
 
@@ -99,6 +99,7 @@ hr {
 .red{
     /* background-position:top; */
     /* right: 50%; */
+    height: 100%;
     background:url(Images/slash.png) no-repeat,linear-gradient(0deg, #b24646,#b24646) no-repeat ;
     /* background-size: cover; */
     background-size: auto 60%,40% 100%;
