@@ -1,0 +1,152 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+
+}
+body{
+    background-color: whitesmoke;
+
+}
+
+.overall{
+    background:linear-gradient(180deg,rgba(49, 49, 49, 0.5),rgba(49, 48, 48, 0.4)),url("Images/background.jpg") ;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Starts */
+header{
+    color: aliceblue;
+}
+/* logo starts */
+.logo{
+    filter: invert();
+    width: 100%;
+    height: 100px;
+    padding: 10px 0px;
+}
+img{
+    object-fit: contain;
+    height: 30px;
+}
+/* logo ends */
+/* Banner Starts */
+.banner{
+    width: 40%;
+    margin: 100px auto;
+    text-align: center;
+}
+.banner>h1{
+    font-weight: 100;
+    margin: 0%;
+}
+/* Banner Ends */
+/* nav starts */
+nav{
+    height: 30px;
+}
+ul{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 70%;
+    list-style: none;
+    column-gap: 50px;
+}
+nav>ul>li{
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+}
+nav a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: small;
+}
+
+/* nav ends */
+/* Header ends */
+
+/* main starts */
+main{
+    background-color: aliceblue;
+}
+/* main-heading starts */
+.main-heading{
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+.main-heading>h5{
+    letter-spacing: 4px;
+}
+/* main-heading ends */
+/* main ends */
+
+
+/* Slider Css Start */
+.slider-container{
+    border: 1px solid rgb(0, 255, 21);
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+}
+/* .slider:nth-child(odd){
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    padding: 40px;;
+}
+.slider:nth-child(even){
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    color: white;
+    text-align: center;
+    padding: 40px;
+} */
+/* Slider Css ends */
+
+
+
+/* Green Line Animation starts*/
+.green-line-anim{
+    display: inline-block;
+    border: 0px solid greenyellow; 
+    width: 0px;
+    transition: width 1s ease-in-out;
+}
+.banner:hover .green-line-anim{
+    border: 1px solid greenyellow; 
+    width: 70%;
+    
+}
+/* Green Line Animation ends */
+
+
+/* sky Line Animation starts*/
+.sky-line-anim{
+    /* display: inline-block; */
+    border: 0px solid skyblue; 
+    width: 0%;
+    transition: width 0.5s ease-in-out,border 0s;
+}
+nav>ul>li:hover .sky-line-anim{
+    border: 1px solid skyblue; 
+    width: 100%;
+    
+}
+/* sky Line Animation ends */
+
