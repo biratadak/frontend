@@ -97,7 +97,7 @@ main{
 
 /* Slider Css Start */
 .slider-container{
-    border: 1px solid rgb(0, 255, 21);
+    /* border: 1px solid rgb(0, 255, 21); */
     /* padding: 10px; */
     width: 70%;
     margin: 0 auto;
@@ -110,7 +110,7 @@ main{
 .slider{
     height: 400px;
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     object-fit: cover;
     object-position: center;
 
@@ -141,10 +141,21 @@ main{
 .next{
     right: 0px;
 }
-.prevArrow{
-    border: 2px solid red;
-}
+
 /* slider buttons ends */
+/* Slider Dots Starts  */
+.slick-dots{
+    list-style-type: none;
+}
+.slick-dots li button{
+    list-style-type:none ;
+/* height: 25px;
+width: 2px;
+background: linear-gradient(#ff0000,#1100ff); */
+border: 1px solid red;
+}
+/* Slider Dots Ends  */
+
 /* Slider Css ends */
 
 
