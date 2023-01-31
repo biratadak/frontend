@@ -67,7 +67,7 @@ ul{
 nav>ul>li{
     display: flex;
     flex-direction: column;
-    justify-content: ;
+    justify-content: center;
 }
 nav a{
     color: aliceblue;
@@ -144,16 +144,49 @@ main{
 
 /* slider buttons ends */
 /* Slider Dots Starts  */
+
 .slick-dots{
     list-style-type: none;
+    bottom: 30px;
 }
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+    border: 3px solid #fcfcfcd4;
+    background-color:#00000054;
+    border-radius: 50%;
+  }
 .slick-dots li button{
-    list-style-type:none ;
-/* height: 25px;
-width: 2px;
-background: linear-gradient(#ff0000,#1100ff); */
-border: 1px solid red;
+height: 10px;
+width: 10px;
+/* background-color: rgba(255, 255, 255, 0.485);  */
+/* border: 1px solid rgb(0, 0, 0); */
+/* border-radius: 50%; */
+padding: 0;
+
 }
+.numbers{
+position: relative;
+visibility:visible;
+color: tomato;
+top: -25px;
+}
+.numbers{
+    visibility:hidden;
+}
+.slick-dots>li:focus .numbers,.slick-dots>li:hover .numbers{
+    visibility: visible;
+}
+
+
+/* .slick-dots li button::before{
+    content: "";
+} */
 /* Slider Dots Ends  */
 
 /* Slider Css ends */

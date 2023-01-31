@@ -144,10 +144,28 @@
 
             prevArrow: '<div class="arrow prev"><img style="transform:rotate(180deg)" src="Images/r-arrow.png" alt=""></div>',
             nextArrow: '<div class="arrow next"><img src="Images/r-arrow.png" alt=""></div>',
-            autoplay: true,
-            autoplaySpeed: 3000,
-          
+            // autoplay: true,
+            // autoplaySpeed: 3000,  
         });
+
+        //custom dots starts
+        $('.slick-dots li:nth-child(1)').html('<div class="numbers">1</div>');
+        $('.slick-dots li:nth-child(2)').html('<div class="numbers">2</div>');
+        $('.slick-dots li:nth-child(3)').html('<div class="numbers">3</div>');
+        $('.slick-dots li:nth-child(4)').html('<div class="numbers">4</div>');
+        $('.slick-dots li:nth-child(5)').html('<div class="numbers">5</div>');
+        $('.slick-dots li:nth-child(6)').html('<div class="numbers">6</div>');
+        $('.slick-dots li:nth-child(7)').html('<div class="numbers">7</div>');
+        $('.slick-dots li:nth-child(8)').html('<div class="numbers">8</div>');
+    
+    // //numbers show-hide
+    // $(".numbers").css("visibility","hidden");
+    // $('.slick-dots li:nth-child(1)').hover(function() {
+    //     $(".numbers").css("visibility","visible");
+    // });
+
+        //custom dots ends
+
     </script>
   </body>
 </html>
