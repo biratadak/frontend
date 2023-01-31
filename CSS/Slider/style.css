@@ -98,25 +98,53 @@ main{
 /* Slider Css Start */
 .slider-container{
     border: 1px solid rgb(0, 255, 21);
-    padding: 10px;
-    width: 50%;
-    margin: auto;
+    /* padding: 10px; */
+    width: 70%;
+    margin: 0 auto;
+    height: 400px;
+    /* overflow: hidden; */
+    object-fit: cover;
+
+   
 }
-/* .slider:nth-child(odd){
-    background-color: red;
-    height: 100px;
-    width: 100px;
-    text-align: center;
-    padding: 40px;;
+.slider{
+    height: 400px;
+    width: 100%;
+    border: 1px solid red;
+    object-fit: cover;
+    object-position: center;
+
 }
-.slider:nth-child(even){
-    background-color: black;
-    height: 100px;
-    width: 100px;
-    color: white;
-    text-align: center;
-    padding: 40px;
-} */
+
+/* slider buttons starts */
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    /* border: 2px solid white; */
+    /* border-radius: 50%; */
+    padding: 25px;
+    height: 100%;
+    z-index: 1;
+    background-color: #ffffff00;
+}
+.arrow:hover{
+    background-color: #ffffff87;
+
+}
+.prev{
+    left: 0px;
+
+}
+.next{
+    right: 0px;
+}
+.prevArrow{
+    border: 2px solid red;
+}
+/* slider buttons ends */
 /* Slider Css ends */
 
 
@@ -131,7 +159,6 @@ main{
 .banner:hover .green-line-anim{
     border: 1px solid greenyellow; 
     width: 70%;
-    
 }
 /* Green Line Animation ends */
 
