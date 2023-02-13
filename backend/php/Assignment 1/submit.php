@@ -1,6 +1,7 @@
 <html>
 
 <head>
+<title>Assgnment 1</title>
   <link rel="stylesheet" href="style.css">
   <style>
     body {
